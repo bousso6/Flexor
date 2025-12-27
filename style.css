@@ -130,9 +130,9 @@ main{
 }
  .card1{
      padding: 30px; 
-    padding-top: 50px;
-    padding-bottom: 50px; 
-    margin-top: -60px; 
+    padding-top: 40px;
+    padding-bottom: 40px; 
+    margin-top: -50px; 
    background-color: rgb(255,88,33);
 }
 .card1 h2{
@@ -253,9 +253,9 @@ main{
 }
 .images{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+     grid-template-columns: 1fr 1fr; 
     margin: 60px;
-   gap: 20px;
+    gap: 20px;
     text-align: center;
     min-height: 100vh;
 }
@@ -266,19 +266,19 @@ main{
     background-repeat: no-repeat;
     height: 70vh;
     border-radius: 15px;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
    
 }
 .image1:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .image2{
      background: url(img/services-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+     height: 70vh; 
     border-radius: 15px;
-     transition: 0.3s ease-in-out;
+     transition: 0.1s ease-in-out;
 }
 .image2:hover{
     transform: scale(1.1);
@@ -287,9 +287,9 @@ main{
      background: url(img/services-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+     height: 70vh; 
     border-radius: 15px;
-     transition: 0.3s ease-in-out;
+     transition: 0.1s ease-in-out;
 }
 .image3:hover{
     transform: scale(1.1);
@@ -298,9 +298,9 @@ main{
      background: url(img/services-4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+     height: 70vh; 
     border-radius: 15px;
-     transition: 0.3s ease-in-out;
+     transition: 0.1s ease-in-out;
 }
 .image4:hover{
     transform: scale(1.1);
@@ -388,30 +388,209 @@ span{
 }
 .folios{
     display: grid;
-    gap: 20px 0;
+     gap: 20px ;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
    
 }
-.folio9{
-    margin-top: -335px;
+
+.folios div img{
+    width: 100%;
+    height: 100%;
 }
-.folio4{
-    margin-top:-50px;
-    margin-bottom: 90px;
+.folio1{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
 }
-.folio8{
-    margin-top: -10px;
-    margin-bottom: 70px;
-    margin-right: -762px;
+.folio6{
+    grid-row: 2/ 5;
+    grid-column: 1 / 2;
 }
-.folio7{
-    margin-right: -760px;
-    margin-top: -55px;
+
+.folio2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 .folio5{
-    margin-top: -50px;
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+}
+.teams div img {
+    width: 250px;
+    
+}
+/* .teams div img{
+    width: 100%;
+    height: 100%;
+} */
+#team{
+     background-color:  rgb(247, 238, 238);
+     padding-top: 60px;
+     height: 90vh;
+    
+
+}
+#team h2{
+    text-align: center;
+   
+}
+#team p{
+    text-align: center;
+}
+.per{
+     font-family: sans-serif;
+    font-size:2rem;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color:  rgba(15, 20, 27, 0.774);
+}
+
+.teams{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px; 
+} 
+
+.band{
+    /* background-color: white; */
+    border-radius: 10px;
+    padding-top: 30px;
+}
+.band img{
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.graphe{
+    background-color: white;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.6); 
+}
+#pricing{
+    min-height: 100vh;
+    padding: 30px;
+}
+#pricing h2{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+.toi{
+    text-align: center;
+
+}
+.prices{
+    display: flex;
+    justify-content: center;
+   gap: 25px;
+    padding: 2rem;
+    width: 100%;
+    padding-top: 6rem;
+   
+}
+.price{
+    background-color: rgba(20, 3, 3, 0.068);
+    width: 40rem;
+    height: 75vh;
+    
+}
+.fr{
+    background-color: white;
+    /* box-shadow: 8px 7px 7px  rgb(249, 243, 243) ; */
+    text-align: center;
+    padding: 30px;
+}
+.free{
+    padding: 20px;
+   width: 100%;
+    text-align: center;
+    color:  rgba(0, 0, 0, 0.6);
+}
+.fre{
+      padding: 20px;
+   width: 100%;
+    text-align: center;
+    background-color: orangered;
+    color:  white;
+}
+strong{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.6);
+}  
+.disabled{
+    text-decoration: line-through;
+    color:  rgba(0, 0, 0, 0.6);
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.23rem;
+   
+   
+}
+.btn2 button{
+     padding: 0.7rem;
+     width: 50%;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+}
+.questions{
+    background-color:  rgb(247, 238, 238) ;
+    min-height: 100vh;
+    padding: 3rem;
+}
+.questions h2{
+      font-family: sans-serif;
+    font-size:2rem;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color:  rgba(15, 20, 27, 0.774);
+    text-align: center;
+}
+.df{
+    text-align: center;
+    padding-top: 10px;
+}
+.quests{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.que{
+    display: flex;
+}
+.quest{
+    padding: 20px;
+    margin-top: 30px;
+    background-color: rgb(253, 95, 37);
+    color: white;
+    text-align: center;
+}
+.quest h3{
+    padding-bottom: 10px;
+}
+.ques{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+
+}
+.sel{
+    background-color: white;
+    width: 50%;
+    padding: 20px;
 }
 
 
 
+
+ 
